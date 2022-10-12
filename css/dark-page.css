@@ -1,0 +1,54 @@
+:root {
+    /* Dark */
+    --color-btn-background-hover: #14ae9c;
+    --color-btn-background: #61d6ad;
+    --color-text: #fff;
+    --color-background: #1e2631;
+    --color-form: #2a343e;
+}
+.dark {
+    background-color: var(--color-background);
+}
+.background__imgage {
+    background-image: url(../img/background-dark.jpg);
+}
+.navbar__right-item-btn,
+.introduce__btn-sub,
+.main-posts__btn-link,
+.subscribe-post__form-btn {
+    background-color: var(--color-btn-background);
+}
+.navbar__right-item-btn:hover,
+.introduce__btn-sub:hover,
+.main-posts__btn-link:hover,
+.subscribe-post__form-btn:hover {
+    background-color: var(--color-btn-background-hover);
+}
+
+.navbar__left-item-link,
+.navbar__item-icon,
+.navbar__right-item-link,
+.navbar__right-item-icon,
+.introduce__title,
+.introduce__descrip,
+.home-list-author__description,
+.home-list-author__top-meet,
+.home-list-missed__description,
+.subscribe-post__description,
+.footer__title,
+.footer__item-link,
+.footer__item-no-logo {
+    color: var(--color-text);
+}
+.home-list-missed__right-logo-path {
+    fill: var(--color-text);
+}
+
+.subscribe-post__form {
+    background-color: var(--color-form);
+}
+
+.footer__item-no-logo::after,
+.footer__item-link::after {
+    background-color: var(--color-text);
+}

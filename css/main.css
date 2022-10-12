@@ -1,0 +1,104 @@
+.header {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+}
+.main {
+    overflow: hidden;
+}
+.intro {
+    margin-top: 50%;
+    transform: translateY(5%);
+}
+.intro__header {
+    font-size: 1.7rem;
+    font-family: var(--font-family-secondary);
+    color: var(--color-font);
+}
+.intro__name {
+    font-size: 6rem;
+    color: var(--color-font);
+    margin: 0;
+    line-height: 1.4;
+}
+.intro__description {
+    font-size: 1.7rem;
+    color: var(--color-font);
+    line-height: 1.6;
+    padding-right: 112px;
+}
+.intro__btn {
+    margin-top: 50px;
+}
+.intro__link {
+    background-color: var(--color-green);
+    text-decoration: none;
+    color: var(--color-white);
+    font-size: 1.6rem;
+    padding: 15px 35px;
+    border-radius: 10px;
+}
+.intro__link:hover {
+    background-color: var(--color-green-hover);
+}
+
+.version {
+    margin-top: 50%;
+    transform: translateY(-50%);
+}
+.version__item-img {
+    position: relative;
+    min-width: 100%;
+    min-height: 270px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: top;
+    transition: 4s ease;
+    border-radius: 10px;
+    box-shadow: 0 5px 50px -10px rgba(0, 0, 0, 0.2);
+}
+.version__item-img:hover {
+    background-position: bottom;
+}
+.version__item-link {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+.version__text {
+    font-size: 1.7rem;
+    font-family: var(--font-family-secondary);
+    color: var(--color-font);
+    text-align: center;
+    margin: 20px 0;
+    pointer-events: none;
+}
+@media (max-width: 739px) {
+    .header {
+        position: fixed;
+        top: 0;
+        right: 0;
+        z-index: -1;
+    }
+    .intro {
+        margin-top: 10%;
+        text-align: center;
+    }
+    .intro__description {
+        padding: unset;
+        margin-right: 45px;
+        margin-left: 45px;
+    }
+    .version {
+        margin-top: 80px;
+        transform: none;
+        padding: 0 50px 0 50px;
+    }
+    .version__item-img {
+        min-height: 310px;
+    }
+}

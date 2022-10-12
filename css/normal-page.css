@@ -1,0 +1,12 @@
+:root {
+    /* Normal */
+    --color-text: #fff;
+    --color-background: #f2efe4;
+    --color-form: #2a343e;
+}
+.normal {
+    background-color: var(--color-background);
+}
+.background__imgage {
+    background-image: url(../img/background-normal.jpg);
+}

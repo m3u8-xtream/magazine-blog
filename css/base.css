@@ -1,0 +1,33 @@
+:root {
+    --font-family-primary: 'Arimo', sans-serif;
+    --font-family-secondary: 'Inconsolata', monospace;
+    --font-family-three: 'EB Garamond', serif;
+    --font-weight-primary: 400;
+    --font-weight-secondary: 700;
+    --color-font: #24292e;
+    --color-white: #fff;
+    --color-red: #f33;
+    --color-green: #a4d037;
+    --color-green-hover: #9ac234;
+    --color-black-alpha: rgba(0,0,0,0.2);
+    --color-btn-hover: #f81ce5;
+}
+* {
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    font-family: var(--font-family-primary);
+    box-sizing: border-box;
+}
+
+@keyframes animationElement{
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
